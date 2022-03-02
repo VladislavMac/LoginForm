@@ -224,12 +224,18 @@ input {
 }
 
 @media only screen and (max-width: 1110px) {
+  .content .content-wrapper {
+    width: 99%;
+  }
   .content .content-wrapper .wrapper-sign .wrapper .title-wrapper .wrapper-title {
     padding: 10px 45px 10px 45px;
   }
 }
 
 @media only screen and (max-width: 880px) {
+  .content .content-wrapper {
+    width: 100%;
+  }
   .content .content-wrapper .wrapper-sign .wrapper .title-wrapper .wrapper-title {
     font-size: 15px;
     padding: 5px 35px 5px 35px;
