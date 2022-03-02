@@ -8,23 +8,23 @@ const formSignIn    = document.querySelector('.sign_in'),
 
 const allButtonSign = document.querySelectorAll('.wrapper-title');
 
-buttonSignIn.addEventListener('click', signIn);
-buttonSignUp.addEventListener('click', signUp);
+buttonSignIn.addEventListener('click', setSignInTransition);
+buttonSignUp.addEventListener('click', setSignUpTransition);
 
-function signIn(){
+function setSignInTransition(){
     addClassActive(buttonSignIn)
     setTransform(0, 100)
 }
-signIn()
+setSignInTransition()
 
-function signUp(){
+function setSignUpTransition(){
     addClassActive(buttonSignUp)
     setTransform(-100, -100)
 }
 
-function setTransform(signIn, signUp){
-    formSignIn.style.transform = `translateX(${signIn}%)`;
-    formSignUp.style.transform = `translateX(${signUp}%)`;
+function setTransform(signInTransitionValue, signUpTransitionValue){
+    formSignIn.style.transform = `translateX(${signInTransitionValue}%)`;
+    formSignUp.style.transform = `translateX(${signUpTransitionValue}%)`;
 }
 
 function addClassActive(elem){
